@@ -25,7 +25,7 @@ Use these configuration file into your code.
 The illustrated code sample below provides the understanding of using the dot net integration kit.
 
 Step 1	Create an encrypted payment request as in example file. (payment.aspx)
-
+```c#
 
       if (!string.IsNullOrEmpty(Convert.ToString(Session["Connectdata"])))
         {
@@ -57,7 +57,7 @@ Step 1	Create an encrypted payment request as in example file. (payment.aspx)
         {	
             Response.Write("Null Session");
         }
-
+```
 Request parameters are adequately set in provided library to their suitable default value. These values can be over written as shown. (BridgePGUtil.aspx)
 
      [Serializable]
