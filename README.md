@@ -60,7 +60,7 @@ Step 1	Create an encrypted payment request as in example file. (payment.aspx)
 ```
 Request parameters are adequately set in provided library to their suitable default value. These values can be over written as shown. (BridgePGUtil.aspx)
 
-     [Serializable]
+```c#
     public class BridgePGUtil
 
         public string merchant_id { get; set; }
@@ -149,7 +149,7 @@ Request parameters are adequately set in provided library to their suitable defa
             string returnvalue = ConfigurationManager.AppSettings["PAY_URL"] + a.ToString();
             return returnvalue;
         }
-
+```
 
 Step 2	Create a response as in example file. (payment_response.aspx)
 
